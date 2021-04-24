@@ -251,10 +251,6 @@ User
     <td>String</td> 
     <td>user's hashed password</td>
   </tr>
-  <tr>
-      <td>favorites</td>
-      <td>String></td>
-      <td></td></tr>
 </table>
 
 Favorites
