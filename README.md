@@ -94,10 +94,6 @@
    * Previous Screen
 
 ## Wireframes
-<img src="https://i.imgur.com/mRcKUdw.jpg" width=600>
-
-
-### [BONUS] Digital Wireframes & Mockups
 
 ![](https://i.imgur.com/qIgMQgH.png)
 
@@ -290,3 +286,6 @@ Favorites
    - (GET) Query logged in user's info
    - (PUT) change username, password, email, name, profile image
    - (DELETE) Delete user account
+
+
+![](https://i.imgur.com/XIcD48m.png)
