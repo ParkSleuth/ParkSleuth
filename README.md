@@ -25,15 +25,16 @@
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-* User can choose type of park or facility 
+- [ ] User can choose type of park or facility 
 (roller rinks, basketball courts, tennis courts, soccer fields, etc.)
-*  User can view park locations nearby on a map
-*  User can view general information on a specific park
+- [ ] User can view park locations nearby on a map
+- [ ] User can view general information on a specific park
+- [X] User can create an account
+- [X] User can login/logout
+- [ ] User can save parks to favorites
 
 **Optional Nice-to-have Stories**
 
-* User can login/logout
-* User can save parks to favorites
 * User can sort favorited parks by most recently added or by rating
 * User can view most popular/highest-rated parks in their area
 
@@ -58,10 +59,7 @@
         * Photos
         * Hours
         * Rating 
-        * Popular times
-
- **Optional Screens** 
- 
+        * Popular times 
  * Login 
      * User can login using google account
  * Favorites
