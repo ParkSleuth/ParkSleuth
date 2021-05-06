@@ -45,6 +45,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVz-CD-BsB"/>
+                                    <segue destination="mh6-HD-qsW" kind="presentation" identifier="loginSegue" id="VTH-Rc-r9p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDg-n5-XCS">
@@ -75,7 +76,7 @@
                     <connections>
                         <outlet property="passwordField" destination="Rqb-cs-bsn" id="0NK-GN-9LM"/>
                         <outlet property="usernameField" destination="Nsf-1s-sB4" id="wTu-hc-rZ3"/>
-                        <segue destination="W4e-gu-Js6" kind="presentation" identifier="loginSegue" id="vjM-dY-14i"/>
+                        <segue destination="W4e-gu-Js6" kind="presentation" identifier="" id="vjM-dY-14i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -241,6 +242,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W4e-gu-Js6" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="mSk-IX-0Uh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4k0-TX-ahW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -313,6 +315,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="VTH-Rc-r9p"/>
         <segue reference="F75-Ic-S7d"/>
         <segue reference="MS5-sg-lkL"/>
     </inferredMetricsTieBreakers>
