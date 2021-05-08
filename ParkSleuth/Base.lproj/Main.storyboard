@@ -45,6 +45,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVz-CD-BsB"/>
+                                    <segue destination="mh6-HD-qsW" kind="presentation" identifier="loginSegue" id="va7-HZ-S21"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDg-n5-XCS">
@@ -75,7 +76,7 @@
                     <connections>
                         <outlet property="passwordField" destination="Rqb-cs-bsn" id="0NK-GN-9LM"/>
                         <outlet property="usernameField" destination="Nsf-1s-sB4" id="wTu-hc-rZ3"/>
-                        <segue destination="W4e-gu-Js6" kind="presentation" identifier="loginSegue" id="vjM-dY-14i"/>
+                        <segue destination="W4e-gu-Js6" kind="presentation" identifier="" id="vjM-dY-14i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -313,6 +314,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="va7-HZ-S21"/>
         <segue reference="F75-Ic-S7d"/>
         <segue reference="MS5-sg-lkL"/>
     </inferredMetricsTieBreakers>
