@@ -25,7 +25,7 @@
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-- [ ] User can choose type of park or facility 
+- [x] User can choose type of park or facility 
 (roller rinks, basketball courts, tennis courts, soccer fields, etc.)
 - [ ] User can view park locations nearby on a map
 - [ ] User can view general information on a specific park
