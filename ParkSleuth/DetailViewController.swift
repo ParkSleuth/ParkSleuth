@@ -9,6 +9,13 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    
+    @IBOutlet weak var parkImage: UIImageView!
+    @IBOutlet weak var parkName: UILabel!
+    @IBOutlet weak var parkAddress: UILabel!
+    @IBOutlet weak var hoursOpen: UILabel!
+    @IBOutlet weak var popularTimes: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
