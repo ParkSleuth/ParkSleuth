@@ -75,7 +75,7 @@
                     <connections>
                         <outlet property="passwordField" destination="Rqb-cs-bsn" id="0NK-GN-9LM"/>
                         <outlet property="usernameField" destination="Nsf-1s-sB4" id="wTu-hc-rZ3"/>
-                        <segue destination="W4e-gu-Js6" kind="presentation" identifier="loginSegue" id="vjM-dY-14i"/>
+                        <segue destination="W4e-gu-Js6" kind="presentation" identifier="loginSegue" id="aCu-1i-vsZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -163,7 +163,7 @@
             <objects>
                 <viewController id="7Gn-FJ-LnO" customClass="FavoritesViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MjU-XC-73G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="WDp-Vs-KYP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -288,7 +288,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="oLq-1F-Lrt" kind="presentation" id="EZh-18-ee3"/>
+                        <segue destination="mh6-HD-qsW" kind="relationship" relationship="rootViewController" id="FpV-MG-J10"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-Nj-KMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -301,6 +301,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mh6-HD-qsW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Categories" id="IBt-lW-LR3"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="XPA-92-wKb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ObL-dM-g3K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -321,7 +322,7 @@
                     <tabBarItem key="tabBarItem" title="Map" id="Gu5-R7-QME"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kDu-69-pC6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -340,7 +341,7 @@
                     <tabBarItem key="tabBarItem" title="Favorites" id="2GO-6v-P4U"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Abs-j5-gs1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -354,6 +355,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="FpV-MG-J10"/>
         <segue reference="F75-Ic-S7d"/>
         <segue reference="MS5-sg-lkL"/>
     </inferredMetricsTieBreakers>
