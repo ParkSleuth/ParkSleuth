@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -163,7 +163,7 @@
             <objects>
                 <viewController id="7Gn-FJ-LnO" customClass="FavoritesViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MjU-XC-73G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="WDp-Vs-KYP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -251,7 +251,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Qp5-vt-AQn"/>
                     <connections>
-                        <segue destination="oS0-LU-PZ3" kind="presentation" id="MS5-sg-lkL"/>
+                        <segue destination="oS0-LU-PZ3" kind="presentation" identifier="toMapSegue" id="MS5-sg-lkL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsI-LY-qbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -262,6 +262,7 @@
         <scene sceneID="DS1-1l-fvO">
             <objects>
                 <tabBarController id="oLq-1F-Lrt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oAp-YO-E56"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3yI-DG-f88">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -280,6 +281,7 @@
         <!--Navigation Controller-->
         <scene sceneID="slc-SP-Faa">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-Nj-KMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W4e-gu-Js6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4k0-TX-ahW">
@@ -288,10 +290,9 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="mh6-HD-qsW" kind="relationship" relationship="rootViewController" id="FpV-MG-J10"/>
+                        <segue destination="oLq-1F-Lrt" kind="relationship" relationship="rootViewController" id="mba-Kb-IID"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-Nj-KMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="711.59420289855075" y="116.57608695652175"/>
         </scene>
@@ -322,7 +323,7 @@
                     <tabBarItem key="tabBarItem" title="Map" id="Gu5-R7-QME"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kDu-69-pC6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -341,7 +342,7 @@
                     <tabBarItem key="tabBarItem" title="Favorites" id="2GO-6v-P4U"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Abs-j5-gs1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -355,7 +356,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FpV-MG-J10"/>
         <segue reference="F75-Ic-S7d"/>
         <segue reference="MS5-sg-lkL"/>
     </inferredMetricsTieBreakers>
