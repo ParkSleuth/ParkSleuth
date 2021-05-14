@@ -82,17 +82,17 @@
             </objects>
             <point key="canvasLocation" x="-223.18840579710147" y="116.57608695652175"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Map View-->
         <scene sceneID="ZBP-K9-xjh">
             <objects>
-                <viewController id="oS0-LU-PZ3" customClass="MapViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xJg-OV-Lm0">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" id="oS0-LU-PZ3" customClass="MapViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="xJg-OV-Lm0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ulq-52-1I5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Mcc-Oa-h5H"/>
+                    <navigationItem key="navigationItem" title="Map View" largeTitleDisplayMode="always" id="Mcc-Oa-h5H"/>
                     <connections>
                         <segue destination="yeR-dJ-qoD" kind="show" id="F75-Ic-S7d"/>
                     </connections>
@@ -158,7 +158,7 @@
             </objects>
             <point key="canvasLocation" x="1631.8840579710147" y="2567.934782608696"/>
         </scene>
-        <!--Favorites View Controller-->
+        <!--Favorites-->
         <scene sceneID="p29-qN-Iss">
             <objects>
                 <viewController id="7Gn-FJ-LnO" customClass="FavoritesViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
@@ -168,7 +168,7 @@
                         <viewLayoutGuide key="safeArea" id="WDp-Vs-KYP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PDQ-RT-vOg"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="PDQ-RT-vOg"/>
                     <connections>
                         <segue destination="yeR-dJ-qoD" kind="presentation" id="yu1-t0-cqx"/>
                     </connections>
@@ -177,7 +177,7 @@
             </objects>
             <point key="canvasLocation" x="2661" y="1776"/>
         </scene>
-        <!--Categories View Controller-->
+        <!--Categories-->
         <scene sceneID="Ues-Zl-4Jb">
             <objects>
                 <viewController id="d72-Gy-2x7" customClass="CategoriesViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
@@ -249,9 +249,9 @@
                         <viewLayoutGuide key="safeArea" id="kPO-LS-yjo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Qp5-vt-AQn"/>
+                    <navigationItem key="navigationItem" title="Categories" id="Qp5-vt-AQn"/>
                     <connections>
-                        <segue destination="oS0-LU-PZ3" kind="presentation" identifier="toMapSegue" id="MS5-sg-lkL"/>
+                        <segue destination="oS0-LU-PZ3" kind="show" identifier="toMapSegue" id="MS5-sg-lkL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsI-LY-qbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -281,7 +281,6 @@
         <!--Navigation Controller-->
         <scene sceneID="slc-SP-Faa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-Nj-KMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W4e-gu-Js6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4k0-TX-ahW">
@@ -293,6 +292,7 @@
                         <segue destination="oLq-1F-Lrt" kind="relationship" relationship="rootViewController" id="mba-Kb-IID"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-Nj-KMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="711.59420289855075" y="116.57608695652175"/>
         </scene>
@@ -302,7 +302,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mh6-HD-qsW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Categories" id="IBt-lW-LR3"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="XPA-92-wKb"/>
+                    <navigationItem key="navigationItem" title="Categories" id="XPA-92-wKb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ObL-dM-g3K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
