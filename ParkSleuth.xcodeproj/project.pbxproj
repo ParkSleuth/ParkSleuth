@@ -45,6 +45,7 @@
 		024DDBFC2C785E80103763CF /* Pods_ParkSleuthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkSleuthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1740D420EF9F7F31DD6241C5 /* Pods-ParkSleuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth.release.xcconfig"; path = "Target Support Files/Pods-ParkSleuth/Pods-ParkSleuth.release.xcconfig"; sourceTree = "<group>"; };
 		3A033A831B0656F07DA427E5 /* Pods-ParkSleuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth.debug.xcconfig"; path = "Target Support Files/Pods-ParkSleuth/Pods-ParkSleuth.debug.xcconfig"; sourceTree = "<group>"; };
+		4BA651672659834000677875 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = SecuredAPIKeys/Config.xcconfig; sourceTree = SOURCE_ROOT; };
 		4FD8EFF7507B21B64DAEEA32 /* Pods_ParkSleuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkSleuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0ABB062634711F0007B06F /* ParkSleuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkSleuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0ABB092634711F0007B06F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 				5D3D25232634D8BD008BDED9 /* MapViewController.swift */,
 				5D3D251E2634D881008BDED9 /* CategoriesViewController.swift */,
 				5D3ECF9026348A6A001C0A38 /* LoginViewController.swift */,
+				4BA651672659834000677875 /* Config.xcconfig */,
 				5D0ABB12263471210007B06F /* Assets.xcassets */,
 				5D0ABB14263471210007B06F /* LaunchScreen.storyboard */,
 				5D0ABB17263471210007B06F /* Info.plist */,
