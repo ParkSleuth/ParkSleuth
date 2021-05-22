@@ -12,10 +12,26 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let url = URL(string:"https://maps.googleapis.com/maps/api/place/textsearch/json?query=skateparks+in+nyc&key=[key]")!
+        
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) { (data, response, error) in
+         if let error = error {
+                print(error.localizedDescription)
+         } else if let data = data {
+                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                
+                print(dataDictionary)
+            
+                // Get array of parks
+                // Store parks in a property
+                // Reload mapview and display parks
+         }
+        }
+        task.resume()
     }
     
-
     /*
     // MARK: - Navigation
 
