@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -82,17 +82,17 @@
             </objects>
             <point key="canvasLocation" x="-223.18840579710147" y="116.57608695652175"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Map View-->
         <scene sceneID="ZBP-K9-xjh">
             <objects>
-                <viewController id="oS0-LU-PZ3" customClass="MapViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xJg-OV-Lm0">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" id="oS0-LU-PZ3" customClass="MapViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="xJg-OV-Lm0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ulq-52-1I5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Mcc-Oa-h5H"/>
+                    <navigationItem key="navigationItem" title="Map View" largeTitleDisplayMode="always" id="Mcc-Oa-h5H"/>
                     <connections>
                         <segue destination="yeR-dJ-qoD" kind="show" id="F75-Ic-S7d"/>
                     </connections>
@@ -158,17 +158,17 @@
             </objects>
             <point key="canvasLocation" x="1631.8840579710147" y="2567.934782608696"/>
         </scene>
-        <!--Favorites View Controller-->
+        <!--Favorites-->
         <scene sceneID="p29-qN-Iss">
             <objects>
                 <viewController id="7Gn-FJ-LnO" customClass="FavoritesViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MjU-XC-73G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="WDp-Vs-KYP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PDQ-RT-vOg"/>
+                    <navigationItem key="navigationItem" title="Favorites" id="PDQ-RT-vOg"/>
                     <connections>
                         <segue destination="yeR-dJ-qoD" kind="presentation" id="yu1-t0-cqx"/>
                     </connections>
@@ -177,7 +177,7 @@
             </objects>
             <point key="canvasLocation" x="2661" y="1776"/>
         </scene>
-        <!--Categories View Controller-->
+        <!--Categories-->
         <scene sceneID="Ues-Zl-4Jb">
             <objects>
                 <viewController id="d72-Gy-2x7" customClass="CategoriesViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
@@ -249,9 +249,9 @@
                         <viewLayoutGuide key="safeArea" id="kPO-LS-yjo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Qp5-vt-AQn"/>
+                    <navigationItem key="navigationItem" title="Categories" id="Qp5-vt-AQn"/>
                     <connections>
-                        <segue destination="oS0-LU-PZ3" kind="presentation" id="MS5-sg-lkL"/>
+                        <segue destination="oS0-LU-PZ3" kind="show" identifier="toMapSegue" id="MS5-sg-lkL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsI-LY-qbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -262,6 +262,7 @@
         <scene sceneID="DS1-1l-fvO">
             <objects>
                 <tabBarController id="oLq-1F-Lrt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oAp-YO-E56"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3yI-DG-f88">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -288,7 +289,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="mh6-HD-qsW" kind="relationship" relationship="rootViewController" id="FpV-MG-J10"/>
+                        <segue destination="oLq-1F-Lrt" kind="relationship" relationship="rootViewController" id="mba-Kb-IID"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OIF-Nj-KMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -301,7 +302,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mh6-HD-qsW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Categories" id="IBt-lW-LR3"/>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="XPA-92-wKb"/>
+                    <navigationItem key="navigationItem" title="Categories" id="XPA-92-wKb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ObL-dM-g3K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -322,7 +323,7 @@
                     <tabBarItem key="tabBarItem" title="Map" id="Gu5-R7-QME"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kDu-69-pC6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -341,7 +342,7 @@
                     <tabBarItem key="tabBarItem" title="Favorites" id="2GO-6v-P4U"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Abs-j5-gs1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -355,7 +356,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FpV-MG-J10"/>
         <segue reference="F75-Ic-S7d"/>
         <segue reference="MS5-sg-lkL"/>
     </inferredMetricsTieBreakers>

@@ -11,14 +11,19 @@ class CategoriesViewController: UIViewController {
 
     
     @IBAction func skateParkBtn(_ sender: Any) {
+      performSegue(withIdentifier: "toMapSegue", sender: self)
     }
     @IBAction func basketballBtn(_ sender: Any) {
+        performSegue(withIdentifier: "toMapSegue", sender: self)
     }
     @IBAction func tennisCourtBtn(_ sender: Any) {
+        performSegue(withIdentifier: "toMapSegue", sender: self)
     }
     @IBAction func rollerRinkBtn(_ sender: Any) {
+        performSegue(withIdentifier: "toMapSegue", sender: self)
     }
     @IBAction func soccerFieldBtn(_ sender: Any) {
+        performSegue(withIdentifier: "toMapSegue", sender: self)
     }
 
     override func viewDidLoad() {
