@@ -9,6 +9,11 @@ import UIKit
 
 class MapViewController: UIViewController {
 
+    var skateparks = [[String:Any]]()       // Array of dictionaries
+
+    //var skateparks = [String:[String]]()  // dictionary of arrays
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,8 +27,11 @@ class MapViewController: UIViewController {
          } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 
-                print(dataDictionary)
+                self.skateparks = dataDictionary["results"] as! [[String:Any]]
             
+                //print(self.skateparks)
+                print(dataDictionary)
+
                 // Get array of parks
                 // Store parks in a property
                 // Reload mapview and display parks
