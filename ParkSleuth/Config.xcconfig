@@ -2,10 +2,9 @@
 //  Config.xcconfig
 //  ParkSleuth
 //
-//  Created by Perla Escano Estrella on 5/22/21.
+//  Created by Perla Escano Estrella on 5/26/21.
 //
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
-
-API_KEY =
+API_KEY = AIzaSyDvFkv2h6M4O1GSkR1xz_b2v5UU21Ps8zo
