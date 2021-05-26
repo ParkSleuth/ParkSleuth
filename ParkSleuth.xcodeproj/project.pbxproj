@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3ED45DAC49AE5942A2AFF28E /* Pods_ParkSleuthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024DDBFC2C785E80103763CF /* Pods_ParkSleuthTests.framework */; };
+		4BF255B6265EE2910028F244 /* APIkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF255B5265EE2910028F244 /* APIkeys.swift */; };
 		5D0ABB0A2634711F0007B06F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0ABB092634711F0007B06F /* AppDelegate.swift */; };
 		5D0ABB0C2634711F0007B06F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0ABB0B2634711F0007B06F /* SceneDelegate.swift */; };
 		5D0ABB112634711F0007B06F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0ABB0F2634711F0007B06F /* Main.storyboard */; };
@@ -43,9 +44,16 @@
 
 /* Begin PBXFileReference section */
 		024DDBFC2C785E80103763CF /* Pods_ParkSleuthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkSleuthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15EE80FF921FEF84FBAF10E4 /* Pods-ParkSleuth.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth.staging.xcconfig"; path = "Target Support Files/Pods-ParkSleuth/Pods-ParkSleuth.staging.xcconfig"; sourceTree = "<group>"; };
 		1740D420EF9F7F31DD6241C5 /* Pods-ParkSleuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth.release.xcconfig"; path = "Target Support Files/Pods-ParkSleuth/Pods-ParkSleuth.release.xcconfig"; sourceTree = "<group>"; };
+		1E7918907BE95D50B8EF5073 /* Pods-ParkSleuth.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth.production.xcconfig"; path = "Target Support Files/Pods-ParkSleuth/Pods-ParkSleuth.production.xcconfig"; sourceTree = "<group>"; };
+		35C4D0C27F446CC8A41D3527 /* Pods-ParkSleuthTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuthTests.staging.xcconfig"; path = "Target Support Files/Pods-ParkSleuthTests/Pods-ParkSleuthTests.staging.xcconfig"; sourceTree = "<group>"; };
 		3A033A831B0656F07DA427E5 /* Pods-ParkSleuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth.debug.xcconfig"; path = "Target Support Files/Pods-ParkSleuth/Pods-ParkSleuth.debug.xcconfig"; sourceTree = "<group>"; };
+		43084AEF5649327130E26375 /* Pods-ParkSleuth-ParkSleuthUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth-ParkSleuthUITests.staging.xcconfig"; path = "Target Support Files/Pods-ParkSleuth-ParkSleuthUITests/Pods-ParkSleuth-ParkSleuthUITests.staging.xcconfig"; sourceTree = "<group>"; };
+		4BF25565265ECC4F0028F244 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		4BF255B5265EE2910028F244 /* APIkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIkeys.swift; sourceTree = SOURCE_ROOT; };
 		4FD8EFF7507B21B64DAEEA32 /* Pods_ParkSleuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkSleuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		540C76E6C1757044D77217A7 /* Pods-ParkSleuthTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuthTests.production.xcconfig"; path = "Target Support Files/Pods-ParkSleuthTests/Pods-ParkSleuthTests.production.xcconfig"; sourceTree = "<group>"; };
 		5D0ABB062634711F0007B06F /* ParkSleuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkSleuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0ABB092634711F0007B06F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D0ABB0B2634711F0007B06F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,9 +74,13 @@
 		5D3ECF9026348A6A001C0A38 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		82F09AC25E333A1CEF0A73F6 /* Pods-ParkSleuthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuthTests.release.xcconfig"; path = "Target Support Files/Pods-ParkSleuthTests/Pods-ParkSleuthTests.release.xcconfig"; sourceTree = "<group>"; };
 		945D56295D0D61D93C7BF3DA /* Pods-ParkSleuth-ParkSleuthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth-ParkSleuthUITests.release.xcconfig"; path = "Target Support Files/Pods-ParkSleuth-ParkSleuthUITests/Pods-ParkSleuth-ParkSleuthUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C72B0399D4BBDBF119C9F4A /* Pods-ParkSleuth-ParkSleuthUITests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth-ParkSleuthUITests.production.xcconfig"; path = "Target Support Files/Pods-ParkSleuth-ParkSleuthUITests/Pods-ParkSleuth-ParkSleuthUITests.production.xcconfig"; sourceTree = "<group>"; };
+		A2B4E442013C9D0656992EB7 /* Pods-ParkSleuth-ParkSleuthUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth-ParkSleuthUITests.development.xcconfig"; path = "Target Support Files/Pods-ParkSleuth-ParkSleuthUITests/Pods-ParkSleuth-ParkSleuthUITests.development.xcconfig"; sourceTree = "<group>"; };
 		BB81EA6C81E05D900D85B901 /* Pods-ParkSleuth-ParkSleuthUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth-ParkSleuthUITests.debug.xcconfig"; path = "Target Support Files/Pods-ParkSleuth-ParkSleuthUITests/Pods-ParkSleuth-ParkSleuthUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC60BB3187B4D240C17A6ACE /* Pods-ParkSleuthTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuthTests.development.xcconfig"; path = "Target Support Files/Pods-ParkSleuthTests/Pods-ParkSleuthTests.development.xcconfig"; sourceTree = "<group>"; };
 		C24ED52A32D8382D09097315 /* Pods-ParkSleuthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuthTests.debug.xcconfig"; path = "Target Support Files/Pods-ParkSleuthTests/Pods-ParkSleuthTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEE8C37E36544EA03CE14C8F /* Pods_ParkSleuth_ParkSleuthUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkSleuth_ParkSleuthUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB0F9979080FECB7A4F441E /* Pods-ParkSleuth.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth.development.xcconfig"; path = "Target Support Files/Pods-ParkSleuth/Pods-ParkSleuth.development.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,15 @@
 				945D56295D0D61D93C7BF3DA /* Pods-ParkSleuth-ParkSleuthUITests.release.xcconfig */,
 				C24ED52A32D8382D09097315 /* Pods-ParkSleuthTests.debug.xcconfig */,
 				82F09AC25E333A1CEF0A73F6 /* Pods-ParkSleuthTests.release.xcconfig */,
+				EFB0F9979080FECB7A4F441E /* Pods-ParkSleuth.development.xcconfig */,
+				15EE80FF921FEF84FBAF10E4 /* Pods-ParkSleuth.staging.xcconfig */,
+				1E7918907BE95D50B8EF5073 /* Pods-ParkSleuth.production.xcconfig */,
+				A2B4E442013C9D0656992EB7 /* Pods-ParkSleuth-ParkSleuthUITests.development.xcconfig */,
+				43084AEF5649327130E26375 /* Pods-ParkSleuth-ParkSleuthUITests.staging.xcconfig */,
+				9C72B0399D4BBDBF119C9F4A /* Pods-ParkSleuth-ParkSleuthUITests.production.xcconfig */,
+				BC60BB3187B4D240C17A6ACE /* Pods-ParkSleuthTests.development.xcconfig */,
+				35C4D0C27F446CC8A41D3527 /* Pods-ParkSleuthTests.staging.xcconfig */,
+				540C76E6C1757044D77217A7 /* Pods-ParkSleuthTests.production.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -147,6 +168,7 @@
 		5D0ABB082634711F0007B06F /* ParkSleuth */ = {
 			isa = PBXGroup;
 			children = (
+				4BF25565265ECC4F0028F244 /* Config.xcconfig */,
 				5D0ABB092634711F0007B06F /* AppDelegate.swift */,
 				5D0ABB0B2634711F0007B06F /* SceneDelegate.swift */,
 				5D0ABB0F2634711F0007B06F /* Main.storyboard */,
@@ -158,6 +180,7 @@
 				5D0ABB12263471210007B06F /* Assets.xcassets */,
 				5D0ABB14263471210007B06F /* LaunchScreen.storyboard */,
 				5D0ABB17263471210007B06F /* Info.plist */,
+				4BF255B5265EE2910028F244 /* APIkeys.swift */,
 			);
 			path = ParkSleuth;
 			sourceTree = "<group>";
@@ -460,6 +483,7 @@
 				5D3D25242634D8BD008BDED9 /* MapViewController.swift in Sources */,
 				5D3D25292634D8FC008BDED9 /* FavoritesViewController.swift in Sources */,
 				5D0ABB0C2634711F0007B06F /* SceneDelegate.swift in Sources */,
+				4BF255B6265EE2910028F244 /* APIkeys.swift in Sources */,
 				5D3D252E2634EE89008BDED9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,8 +539,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5D0ABB2E263471210007B06F /* Debug */ = {
+		4BF25561265ECBF50028F244 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43084AEF5649327130E26375 /* Pods-ParkSleuth-ParkSleuthUITests.staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -574,10 +599,134 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Staging;
 		};
-		5D0ABB2F263471210007B06F /* Release */ = {
+		4BF25562265ECBF50028F244 /* Staging */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EE80FF921FEF84FBAF10E4 /* Pods-ParkSleuth.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParkSleuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ParkSleuth.ParkSleuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		4BF25563265ECBF50028F244 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35C4D0C27F446CC8A41D3527 /* Pods-ParkSleuthTests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParkSleuthTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ParkSleuth.ParkSleuthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkSleuth.app/ParkSleuth";
+			};
+			name = Staging;
+		};
+		4BF25564265ECBF50028F244 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43084AEF5649327130E26375 /* Pods-ParkSleuth-ParkSleuthUITests.staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParkSleuthUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ParkSleuth.ParkSleuthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParkSleuth;
+			};
+			name = Staging;
+		};
+		5D0ABB2E263471210007B06F /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B4E442013C9D0656992EB7 /* Pods-ParkSleuth-ParkSleuthUITests.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Development;
+		};
+		5D0ABB2F263471210007B06F /* Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C72B0399D4BBDBF119C9F4A /* Pods-ParkSleuth-ParkSleuthUITests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -624,16 +773,17 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Production;
 		};
-		5D0ABB31263471210007B06F /* Debug */ = {
+		5D0ABB31263471210007B06F /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A033A831B0656F07DA427E5 /* Pods-ParkSleuth.debug.xcconfig */;
+			baseConfigurationReference = EFB0F9979080FECB7A4F441E /* Pods-ParkSleuth.development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -648,11 +798,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Development;
 		};
-		5D0ABB32263471210007B06F /* Release */ = {
+		5D0ABB32263471210007B06F /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1740D420EF9F7F31DD6241C5 /* Pods-ParkSleuth.release.xcconfig */;
+			baseConfigurationReference = 1E7918907BE95D50B8EF5073 /* Pods-ParkSleuth.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -667,11 +817,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Production;
 		};
-		5D0ABB34263471210007B06F /* Debug */ = {
+		5D0ABB34263471210007B06F /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C24ED52A32D8382D09097315 /* Pods-ParkSleuthTests.debug.xcconfig */;
+			baseConfigurationReference = BC60BB3187B4D240C17A6ACE /* Pods-ParkSleuthTests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -689,11 +839,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkSleuth.app/ParkSleuth";
 			};
-			name = Debug;
+			name = Development;
 		};
-		5D0ABB35263471210007B06F /* Release */ = {
+		5D0ABB35263471210007B06F /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82F09AC25E333A1CEF0A73F6 /* Pods-ParkSleuthTests.release.xcconfig */;
+			baseConfigurationReference = 540C76E6C1757044D77217A7 /* Pods-ParkSleuthTests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -711,11 +861,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkSleuth.app/ParkSleuth";
 			};
-			name = Release;
+			name = Production;
 		};
-		5D0ABB37263471210007B06F /* Debug */ = {
+		5D0ABB37263471210007B06F /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB81EA6C81E05D900D85B901 /* Pods-ParkSleuth-ParkSleuthUITests.debug.xcconfig */;
+			baseConfigurationReference = A2B4E442013C9D0656992EB7 /* Pods-ParkSleuth-ParkSleuthUITests.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -731,11 +881,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ParkSleuth;
 			};
-			name = Debug;
+			name = Development;
 		};
-		5D0ABB38263471210007B06F /* Release */ = {
+		5D0ABB38263471210007B06F /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 945D56295D0D61D93C7BF3DA /* Pods-ParkSleuth-ParkSleuthUITests.release.xcconfig */;
+			baseConfigurationReference = 9C72B0399D4BBDBF119C9F4A /* Pods-ParkSleuth-ParkSleuthUITests.production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -751,7 +901,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ParkSleuth;
 			};
-			name = Release;
+			name = Production;
 		};
 /* End XCBuildConfiguration section */
 
@@ -759,38 +909,42 @@
 		5D0ABB012634711F0007B06F /* Build configuration list for PBXProject "ParkSleuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D0ABB2E263471210007B06F /* Debug */,
-				5D0ABB2F263471210007B06F /* Release */,
+				5D0ABB2E263471210007B06F /* Development */,
+				4BF25561265ECBF50028F244 /* Staging */,
+				5D0ABB2F263471210007B06F /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		5D0ABB30263471210007B06F /* Build configuration list for PBXNativeTarget "ParkSleuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D0ABB31263471210007B06F /* Debug */,
-				5D0ABB32263471210007B06F /* Release */,
+				5D0ABB31263471210007B06F /* Development */,
+				4BF25562265ECBF50028F244 /* Staging */,
+				5D0ABB32263471210007B06F /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		5D0ABB33263471210007B06F /* Build configuration list for PBXNativeTarget "ParkSleuthTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D0ABB34263471210007B06F /* Debug */,
-				5D0ABB35263471210007B06F /* Release */,
+				5D0ABB34263471210007B06F /* Development */,
+				4BF25563265ECBF50028F244 /* Staging */,
+				5D0ABB35263471210007B06F /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		5D0ABB36263471210007B06F /* Build configuration list for PBXNativeTarget "ParkSleuthUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D0ABB37263471210007B06F /* Debug */,
-				5D0ABB38263471210007B06F /* Release */,
+				5D0ABB37263471210007B06F /* Development */,
+				4BF25564265ECBF50028F244 /* Staging */,
+				5D0ABB38263471210007B06F /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 	};
