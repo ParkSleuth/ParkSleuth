@@ -12,7 +12,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = URL(string:"https://maps.googleapis.com/maps/api/place/textsearch/json?query=skateparks+in+nyc&key=\(API_KEY)")!
+        let url = URL(string:"https://maps.googleapis.com/maps/api/place/textsearch/json?query=skateparks+in+nyc&key=\(APIKeys.googleMapsKey.self)")!
         
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
