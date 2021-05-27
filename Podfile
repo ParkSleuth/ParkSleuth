@@ -9,6 +9,9 @@ target 'ParkSleuth' do
   pod 'GooglePlaces'
   pod 'GoogleMaps'
   pod 'Parse'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+
   target 'ParkSleuthTests' do
     inherit! :search_paths
     # Pods for testing
