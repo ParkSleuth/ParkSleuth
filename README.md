@@ -28,7 +28,7 @@
 - [x] User can choose type of park or facility 
 (roller rinks, basketball courts, tennis courts, soccer fields, etc.)
 - [x] User can view park locations nearby on a map  (Unit 13)
-- [ ] User can view general information on a specific park
+- [x] User can view general information on a specific park
 - [X] User can create an account
 - [X] User can login/logout
 - [ ] User can save parks to favorites
