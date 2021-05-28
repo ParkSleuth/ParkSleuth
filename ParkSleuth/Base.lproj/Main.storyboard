@@ -82,26 +82,6 @@
             </objects>
             <point key="canvasLocation" x="-223.18840579710147" y="116.57608695652175"/>
         </scene>
-        <!--Map View-->
-        <scene sceneID="ZBP-K9-xjh">
-            <objects>
-                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" id="oS0-LU-PZ3" customClass="MapViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="DyT-dK-FCy" customClass="GMSMapView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4Bo-QZ-sNM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Map View" largeTitleDisplayMode="always" id="Mcc-Oa-h5H"/>
-                    <connections>
-                        <outlet property="myMap" destination="DyT-dK-FCy" id="ilk-eY-Qxh"/>
-                        <segue destination="yeR-dJ-qoD" kind="show" id="F75-Ic-S7d"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0X-gc-waF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1596" y="1776"/>
-        </scene>
         <!--Detail View Controller-->
         <scene sceneID="7Rl-lF-GZz">
             <objects>
@@ -252,13 +232,120 @@
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="Qp5-vt-AQn"/>
                     <connections>
-                        <segue destination="oS0-LU-PZ3" kind="show" identifier="toMapSegue" id="MS5-sg-lkL"/>
-                        <segue destination="r4G-hl-AVk" kind="show" id="6CH-hf-qy4"/>
+                        <segue destination="r4G-hl-AVk" kind="show" identifier="toSkateparkSegue" id="6CH-hf-qy4"/>
+                        <segue destination="AtG-x5-sJz" kind="show" identifier="toBasketballSegue" id="2w1-da-ev9"/>
+                        <segue destination="rBB-Aq-ZkW" kind="show" identifier="toTennisSegue" id="d8N-fs-hUb"/>
+                        <segue destination="Q5o-YH-vBo" kind="show" identifier="toRollerRinkSegue" id="SSs-Fd-1vd"/>
+                        <segue destination="rjB-Zw-PJZ" kind="show" identifier="toSoccerSegue" id="Zfy-ir-Zyf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsI-LY-qbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="560.86956521739137" y="1776.358695652174"/>
+            <point key="canvasLocation" x="-446" y="1820"/>
+        </scene>
+        <!--Soccer View Controller-->
+        <scene sceneID="NL8-Cm-ug4">
+            <objects>
+                <viewController id="rjB-Zw-PJZ" customClass="SoccerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d3n-MB-unZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWt-w3-4W7" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YTo-Vn-a90"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oho-sc-qGY"/>
+                    <connections>
+                        <outlet property="myMap" destination="xWt-w3-4W7" id="Z2U-rc-TbY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QJ0-Wz-Ohy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2330.434782608696" y="2666.576086956522"/>
+        </scene>
+        <!--Roller Rink View Controller-->
+        <scene sceneID="3Qp-Tm-D63">
+            <objects>
+                <viewController id="Q5o-YH-vBo" customClass="RollerRinkViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fB6-Ql-Uma">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-HH-ceb" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ffW-em-h4C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ncs-O4-jwW"/>
+                    <connections>
+                        <outlet property="myMap" destination="SIu-HH-ceb" id="whr-sX-yqJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtO-Ha-Ja6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1436.2318840579712" y="2666.576086956522"/>
+        </scene>
+        <!--Tennis View Controller-->
+        <scene sceneID="8oV-fm-M1J">
+            <objects>
+                <viewController id="rBB-Aq-ZkW" customClass="TennisViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iC7-0a-YAH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DiW-5e-YMj" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yxh-Wh-7ZO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bHw-l4-9V5"/>
+                    <connections>
+                        <outlet property="myMap" destination="DiW-5e-YMj" id="Cq1-Xk-ZAA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3k-Yu-XJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-588.40579710144937" y="2666.576086956522"/>
+        </scene>
+        <!--Basketball View Controller-->
+        <scene sceneID="etG-Sk-ccd">
+            <objects>
+                <viewController id="AtG-x5-sJz" customClass="BasketballViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fMb-Tv-qlK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ad-bM-XSL" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FCF-vQ-LFQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gt0-XO-Z0s"/>
+                    <connections>
+                        <outlet property="myMap" destination="7ad-bM-XSL" id="6kk-y7-cCy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoo-7S-t5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347.82608695652175" y="2666.576086956522"/>
         </scene>
         <!--Skatepark View Controller-->
         <scene sceneID="BYH-4Z-NA9">
@@ -267,14 +354,24 @@
                     <view key="view" contentMode="scaleToFill" id="f7b-gK-lTl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZi-AY-o2i" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qdE-QM-kM8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="BLf-wM-A2T"/>
+                    <connections>
+                        <outlet property="myMap" destination="OZi-AY-o2i" id="FcT-Vx-hhr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjK-Gg-U0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="2585"/>
+            <point key="canvasLocation" x="1214.4927536231885" y="2666.576086956522"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DS1-1l-fvO">
@@ -345,9 +442,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="oS0-LU-PZ3" kind="relationship" relationship="rootViewController" id="djY-R1-M3C"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dfo-dy-DiF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -373,10 +467,6 @@
             <point key="canvasLocation" x="2661" y="986"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="F75-Ic-S7d"/>
-        <segue reference="MS5-sg-lkL"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="ParkSleuth_logo" width="194" height="106"/>
         <systemColor name="systemBackgroundColor">

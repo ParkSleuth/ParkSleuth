@@ -9,6 +9,9 @@ import UIKit
 
 class RollerRinkViewController: UIViewController {
 
+    
+    @IBOutlet weak var myMap: GMSMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

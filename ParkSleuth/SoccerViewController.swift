@@ -9,6 +9,8 @@ import UIKit
 
 class SoccerViewController: UIViewController {
 
+    @IBOutlet weak var myMap: GMSMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
