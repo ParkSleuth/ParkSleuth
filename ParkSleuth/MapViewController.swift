@@ -12,27 +12,10 @@ import SwiftyJSON
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
-    @IBOutlet weak var myMap: GMSMapView!
+
+    @IBOutlet var myMap: GMSMapView!
     
     let locationManager = CLLocationManager()
-    
-    static func stringify(json: Any, prettyPrinted: Bool = false) -> String {
-        var options: JSONSerialization.WritingOptions = []
-        if prettyPrinted {
-          options = JSONSerialization.WritingOptions.prettyPrinted
-        }
-
-        do {
-          let data = try JSONSerialization.data(withJSONObject: json, options: options)
-          if let string = String(data: data, encoding: String.Encoding.utf8) {
-            return string
-          }
-        } catch {
-          print(error)
-        }
-
-        return ""
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +26,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         {
             locationManager.requestLocation()
             
+            var ratings : JSON = ""
+            var parkRating: String = ""
             var addresses : JSON = ""
             var full_address: String = ""
             var latitudeLongitude : JSON = ""
@@ -104,6 +89,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
                                                 print(parkName)
                                                     
                                                 marker.map = self.myMap
+                                            }
+                                        }
+                                        for rating in oCandidate
+                                        {
+                                            if (rating.0.description == "rating")
+                                            {
+                                                ratings = rating.1
+                                                print(ratings)
+                                                parkRating = ratings.stringValue
                                             }
                                         }
                                     }
@@ -184,3 +178,4 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     */
 
 }
+

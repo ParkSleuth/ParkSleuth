@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -86,14 +86,15 @@
         <scene sceneID="ZBP-K9-xjh">
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="overCurrentContext" id="oS0-LU-PZ3" customClass="MapViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFit" id="xJg-OV-Lm0">
+                    <view key="view" contentMode="scaleToFill" id="DyT-dK-FCy" customClass="GMSMapView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ulq-52-1I5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Bo-QZ-sNM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map View" largeTitleDisplayMode="always" id="Mcc-Oa-h5H"/>
                     <connections>
+                        <outlet property="myMap" destination="DyT-dK-FCy" id="ilk-eY-Qxh"/>
                         <segue destination="yeR-dJ-qoD" kind="show" id="F75-Ic-S7d"/>
                     </connections>
                 </viewController>
@@ -156,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khk-kb-9Sw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1631.8840579710147" y="2567.934782608696"/>
+            <point key="canvasLocation" x="3857" y="2767"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="p29-qN-Iss">
@@ -252,11 +253,28 @@
                     <navigationItem key="navigationItem" title="Categories" id="Qp5-vt-AQn"/>
                     <connections>
                         <segue destination="oS0-LU-PZ3" kind="show" identifier="toMapSegue" id="MS5-sg-lkL"/>
+                        <segue destination="r4G-hl-AVk" kind="show" id="6CH-hf-qy4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsI-LY-qbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="560.86956521739137" y="1776.358695652174"/>
+        </scene>
+        <!--Skatepark View Controller-->
+        <scene sceneID="BYH-4Z-NA9">
+            <objects>
+                <viewController id="r4G-hl-AVk" customClass="SkateparkViewController" customModule="ParkSleuth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f7b-gK-lTl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qdE-QM-kM8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BLf-wM-A2T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjK-Gg-U0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="2585"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DS1-1l-fvO">

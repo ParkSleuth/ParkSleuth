@@ -20,6 +20,7 @@
 		5D3D25292634D8FC008BDED9 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3D25282634D8FC008BDED9 /* FavoritesViewController.swift */; };
 		5D3D252E2634EE89008BDED9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3D252D2634EE89008BDED9 /* DetailViewController.swift */; };
 		5D3ECF9126348A6A001C0A38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3ECF9026348A6A001C0A38 /* LoginViewController.swift */; };
+		5D45953F26609EF300FA6E5A /* SkateparkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45953E26609EF300FA6E5A /* SkateparkViewController.swift */; };
 		800425FB6F8A05F444C62BFE /* Pods_ParkSleuth_ParkSleuthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE8C37E36544EA03CE14C8F /* Pods_ParkSleuth_ParkSleuthUITests.framework */; };
 		AC7D662C54A11BE40BF6335C /* Pods_ParkSleuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD8EFF7507B21B64DAEEA32 /* Pods_ParkSleuth.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		5D3D25282634D8FC008BDED9 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		5D3D252D2634EE89008BDED9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5D3ECF9026348A6A001C0A38 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5D45953E26609EF300FA6E5A /* SkateparkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkateparkViewController.swift; sourceTree = "<group>"; };
 		82F09AC25E333A1CEF0A73F6 /* Pods-ParkSleuthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuthTests.release.xcconfig"; path = "Target Support Files/Pods-ParkSleuthTests/Pods-ParkSleuthTests.release.xcconfig"; sourceTree = "<group>"; };
 		945D56295D0D61D93C7BF3DA /* Pods-ParkSleuth-ParkSleuthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth-ParkSleuthUITests.release.xcconfig"; path = "Target Support Files/Pods-ParkSleuth-ParkSleuthUITests/Pods-ParkSleuth-ParkSleuthUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BB81EA6C81E05D900D85B901 /* Pods-ParkSleuth-ParkSleuthUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkSleuth-ParkSleuthUITests.debug.xcconfig"; path = "Target Support Files/Pods-ParkSleuth-ParkSleuthUITests/Pods-ParkSleuth-ParkSleuthUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				5D0ABB0B2634711F0007B06F /* SceneDelegate.swift */,
 				5D0ABB0F2634711F0007B06F /* Main.storyboard */,
 				5D3D252D2634EE89008BDED9 /* DetailViewController.swift */,
+				5D45953E26609EF300FA6E5A /* SkateparkViewController.swift */,
 				5D3D25282634D8FC008BDED9 /* FavoritesViewController.swift */,
 				5D3D25232634D8BD008BDED9 /* MapViewController.swift */,
 				5D3D251E2634D881008BDED9 /* CategoriesViewController.swift */,
@@ -459,6 +462,7 @@
 				5D3D251F2634D881008BDED9 /* CategoriesViewController.swift in Sources */,
 				5D3D25242634D8BD008BDED9 /* MapViewController.swift in Sources */,
 				5D3D25292634D8FC008BDED9 /* FavoritesViewController.swift in Sources */,
+				5D45953F26609EF300FA6E5A /* SkateparkViewController.swift in Sources */,
 				5D0ABB0C2634711F0007B06F /* SceneDelegate.swift in Sources */,
 				5D3D252E2634EE89008BDED9 /* DetailViewController.swift in Sources */,
 			);
