@@ -89,17 +89,25 @@
                     <view key="view" contentMode="scaleAspectFit" id="xJg-OV-Lm0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8MN-Sy-xfi" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ulq-52-1I5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map View" largeTitleDisplayMode="always" id="Mcc-Oa-h5H"/>
                     <connections>
+                        <outlet property="myMap" destination="8MN-Sy-xfi" id="dQw-d1-C8O"/>
                         <segue destination="yeR-dJ-qoD" kind="show" id="F75-Ic-S7d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0X-gc-waF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1596" y="1776"/>
+            <point key="canvasLocation" x="1595.6521739130435" y="1775.5434782608697"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="7Rl-lF-GZz">

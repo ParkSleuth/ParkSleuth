@@ -12,6 +12,7 @@ import SwiftyJSON
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
     
+ 
     @IBOutlet weak var myMap: GMSMapView!
     
     let locationManager = CLLocationManager()
