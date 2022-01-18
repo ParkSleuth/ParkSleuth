@@ -7,6 +7,8 @@
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
 
+http://g.recordit.co/k4Bocf1DdQ.gif
+
 ## Overview
 ### Description
   ParkSleuth is a mobile app that allows users to locate parks within the area. It also provides general information on the parks and allows users to save their favorite locations.
